@@ -2,6 +2,16 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Prerequisites
+
+This project requires:
+
+- [commitizen](https://github.com/commitizen/cz-cli): `npm install -g commitizen`
+
+This project recommends using:
+
+- [vscode](https://code.visualstudio.com/): because the project provides premade configurations for linting, formatting, and debugging in vscode
+
 ## Available Scripts
 
 In the project directory, you can run:
