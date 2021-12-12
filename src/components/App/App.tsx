@@ -4,6 +4,8 @@ import './App.css';
 import { AppHeader } from './App.styles';
 
 const App = (): JSX.Element => {
+  const foo = 'bar';
+
   return (
     <div className="App">
       <AppHeader>
@@ -11,6 +13,7 @@ const App = (): JSX.Element => {
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
+        <p>{foo}</p>
         <a
           className="App-link"
           href="https://reactjs.org"
