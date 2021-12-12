@@ -1,0 +1,39 @@
+{
+  "types": [
+    {
+      "type": "feat",
+      "section": "Features"
+    },
+    {
+      "type": "fix",
+      "section": "Bug Fixes"
+    },
+    {
+      "type": "chore",
+      "section": "Chores, dev efficiency improvements, etc."
+    },
+    {
+      "type": "docs",
+      "section": "Documentation"
+    },
+    {
+      "type": "style",
+      "hidden": true
+    },
+    {
+      "type": "refactor",
+      "hidden": true
+    },
+    {
+      "type": "perf",
+      "section": "Performance improvements"
+    },
+    {
+      "type": "test",
+      "hidden": true
+    }
+  ],
+  "skip": {
+    "commit": true
+  }
+}
