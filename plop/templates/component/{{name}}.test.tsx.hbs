@@ -1,0 +1,25 @@
+import { render, screen } from '@testing-library/react';
+import {{name}} from './{{name}}';
+
+describe('the {{name}} component', () => {
+
+  test('renders', () => {
+    render(<{{name}} />);
+    const linkElement = screen.getByText(/{{name}}/i);
+    expect(linkElement).toBeInTheDocument();
+  });
+
+  test('starts with a failing test to remind you to write tests', () => {
+    render(<{{name}} />);
+    const msg = `
+      \n
+      This failing test is provided in the plopfile to remind you to write your
+      own tests for your new component. You should delete this test and replace it
+      with tests appropriate for the component you are building.
+      \n
+    `
+    const linkElement = screen.getByText(msg);
+    expect(linkElement).toBeInTheDocument();
+  });
+  
+})
