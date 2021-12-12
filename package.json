@@ -26,7 +26,7 @@
     "eject": "react-scripts eject",
     "lint": "yarn lint:ts && yarn lint:css",
     "lint:fix": "yarn lint:ts:fix && yarn lint:css:fix",
-    "lint:ts": "tsc --noEmit && eslint src/ --ext .ts,.tsx",
+    "lint:ts": "tsc --noEmit --jsx react-jsx && eslint src/ --ext .ts,.tsx",
     "lint:css": "stylelint './src/**/*.{tsx,css}'",
     "lint:ts:fix": "yarn lint:ts --fix",
     "lint:css:fix": "yarn lint:css --fix",

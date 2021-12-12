@@ -1,5 +1,0 @@
-{
-  "*.{tsx,ts}": ["tsc --noEmit"],
-  "*.{jsx,js,tsx,ts}": ["prettier", "eslint"],
-  "*.styles.{jsx,tsx}": ["stylelint"]
-}
