@@ -1,10 +1,12 @@
 import logo from 'logo.svg';
+import React from 'react';
 import './App.css';
+import { AppHeader } from './App.styles';
 
-function App() {
+const App = (): JSX.Element => {
   return (
     <div className="App">
-      <header className="App-header">
+      <AppHeader>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
@@ -17,9 +19,9 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </AppHeader>
     </div>
   );
-}
+};
 
 export default App;
