@@ -23,8 +23,12 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint src/ --ext .ts,.tsx",
-    "lint:fix": "eslint src/ --ext .ts,.tsx",
+    "lint": "yarn lint:ts && yarn lint:css",
+    "lint:fix": "yarn lint:ts:fix && yarn lint:css:fix",
+    "lint:ts": "tsc --noEmit && eslint src/ --ext .ts,.tsx",
+    "lint:css": "stylelint './src/**/*.{tsx,css}'",
+    "lint:ts:fix": "yarn lint:ts --fix",
+    "lint:css:fix": "yarn lint:css --fix",
     "format": "prettier --write src/**/*{.ts,tsx}",
     "prepare": "husky install"
   },
@@ -49,6 +53,7 @@
   "devDependencies": {
     "@commitlint/cli": "^15.0.0",
     "@commitlint/config-conventional": "^15.0.0",
+    "@stylelint/postcss-css-in-js": "^0.37.2",
     "@typescript-eslint/eslint-plugin": "^5.6.0",
     "@typescript-eslint/parser": "^5.6.0",
     "cz-conventional-changelog": "^3.3.0",
@@ -56,7 +61,11 @@
     "eslint-config-prettier": "^7.0.0",
     "husky": "^7.0.0",
     "lint-staged": "^12.1.2",
-    "prettier": "^2.5.1"
+    "postcss-syntax": "^0.36.2",
+    "prettier": "^2.5.1",
+    "stylelint": "^13.12.0",
+    "stylelint-config-recommended": "^3.0.0",
+    "stylelint-config-styled-components": "^0.1.1"
   },
   "config": {
     "commitizen": {
