@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.2](https://github.com/joshea0/react-app-typescript-starter-kit/compare/v1.0.1...v1.0.2) (2021-12-15)
+
+
+### Chores, dev efficiency improvements, etc.
+
+* **release:** 1.0.1 ([6a02c7d](https://github.com/joshea0/react-app-typescript-starter-kit/commit/6a02c7d2b622aade90aeb279fe0145f94dec3fad))
+
 ## 1.0.0 (2021-12-12)
 
 
