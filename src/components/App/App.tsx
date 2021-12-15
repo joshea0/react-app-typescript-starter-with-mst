@@ -1,27 +1,17 @@
-import logo from 'logo.svg';
+import { Routes, Route } from 'react-router-dom';
+
 import './App.css';
-import { AppHeader } from './App.styles';
+import Home from 'components/Home/Home';
+import About from 'components/About/About';
 
 const App = (): JSX.Element => {
-  const foo = 'bar';
-
   return (
     <div className="App">
-      <AppHeader>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <p>{foo}</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </AppHeader>
+      <h1>Welcome to React Router!</h1>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="about" element={<About />} />
+      </Routes>
     </div>
   );
 };
