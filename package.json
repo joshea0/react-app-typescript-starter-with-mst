@@ -10,7 +10,7 @@
     "@types/node": "^16.11.12",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
-    "@types/styled-components": "^5.1.17",
+    "@types/styled-components": "^5.1.21",
     "mobx": "^6.3.9",
     "mobx-react-lite": "^3.2.2",
     "mobx-state-tree": "^5.1.0",
